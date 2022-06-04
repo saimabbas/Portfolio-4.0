@@ -175,6 +175,9 @@ header {
           font-weight: 700;
           font-style: italic;
         }
+        .logo {
+          transform: scale(0.65);
+        }
       }
       .pgc-bottom {
         width: 100%;
@@ -208,6 +211,12 @@ header {
         transform: scale(1.035);
         a {
           color: #fff;
+        }
+        .logo {
+          transform: scale(0.65) rotate(180deg);
+          .logo-box {
+            background-color: #fff;
+          }
         }
       }
     }

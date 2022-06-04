@@ -177,6 +177,9 @@ header .header-content .header-right a img {
   font-weight: 700;
   font-style: italic;
 }
+.packages-section .packages-grid .packages-grid-card .pgc-top .logo {
+  transform: scale(0.65);
+}
 .packages-section .packages-grid .packages-grid-card .pgc-bottom {
   width: 100%;
   margin: 10rem 0 0 0;
@@ -209,6 +212,12 @@ header .header-content .header-right a img {
 }
 .packages-section .packages-grid .packages-grid-card:hover a {
   color: #fff;
+}
+.packages-section .packages-grid .packages-grid-card:hover .logo {
+  transform: scale(0.65) rotate(180deg);
+}
+.packages-section .packages-grid .packages-grid-card:hover .logo .logo-box {
+  background-color: #fff;
 }
 
 .customers-section {
@@ -547,12 +556,14 @@ main {
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  transition: 0.5s;
 }
 .logo .logo-box {
   width: 1.75rem;
   height: 1.75rem;
   background-color: #323232;
   transform: rotate(45deg);
+  transition: 0.5s;
 }
 
 nav {
