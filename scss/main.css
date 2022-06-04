@@ -26,6 +26,7 @@ header .header-content .header-center a {
   margin: 0 3.5rem;
   color: #000;
   text-decoration: none;
+  transition: 0.25s;
 }
 header .header-content .header-right {
   display: flex;
@@ -477,46 +478,15 @@ footer .footer-bottom .fb-content h6 {
   position: relative;
   min-height: 100vh;
 }
+.contact-hero-section .chs-heading-container {
+  background-color: #f5f6f7;
+  height: 65vh;
+}
 .contact-hero-section .chs-content {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.contact-hero-section .chs-heading-container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  background-color: #f5f6f7;
-  height: 65vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.contact-hero-section .chs-heading-container h1 {
-  font-size: 7.5rem;
-  position: relative;
-  text-align: center;
-  position: relative;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-.contact-hero-section .chs-heading-container h1 .hero-heading-line-1 {
-  width: 45%;
-  height: 1px;
-  background-color: #323232;
-  position: absolute;
-  top: 0;
-  right: -10%;
-}
-.contact-hero-section .chs-heading-container h1 .hero-heading-line-2 {
-  width: 25%;
-  height: 1px;
-  background-color: #323232;
-  position: absolute;
-  bottom: 0;
-  left: 10%;
 }
 .contact-hero-section .chs-grid-container {
   width: 100%;
@@ -619,6 +589,29 @@ footer .footer-bottom .fb-content h6 {
 }
 .fiverr-upwork-section .fus-content .fus-grid .fus-grtid-card:nth-child(2) .u-l-c {
   fill: #fff !important;
+}
+
+.about-hero-section {
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+}
+.about-hero-section .about-distorted-section {
+  width: 100%;
+  transform: translate(0, -9rem);
+}
+.about-hero-section .ads-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-hero-section .ads-content img {
+  width: 35rem;
+  height: 65rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15rem 0 15rem 0;
 }
 
 @font-face {
@@ -758,4 +751,59 @@ nav span {
   font-size: 1.5rem;
   color: #323232;
   margin: 0 2rem;
+}
+
+.chs-heading-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.chs-heading-container h1 {
+  font-size: 7.5rem;
+  position: relative;
+  text-align: center;
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.chs-heading-container h1 .hero-heading-line-1 {
+  width: 45%;
+  height: 1px;
+  background-color: #323232;
+  position: absolute;
+  top: 0;
+  right: -10%;
+}
+.chs-heading-container h1 .hero-heading-line-2 {
+  width: 25%;
+  height: 1px;
+  background-color: #323232;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+}
+.chs-heading-container h5 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 2.5rem 0 0 0;
+}
+
+#circular-text {
+  position: relative;
+  background: #fff;
+  color: #000;
+  border-radius: 100%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+}
+
+#circular-text span {
+  position: absolute;
+  transform-origin: top left;
 }/*# sourceMappingURL=main.css.map */
