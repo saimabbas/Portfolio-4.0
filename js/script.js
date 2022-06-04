@@ -9,7 +9,7 @@ var swiper = new Swiper(".testimonials-swiper", {
   },
   autoHeight: false,
   speed: 1000,
-  spaceBetween: 50,
+  spaceBetween: 100,
   centeredSlides: true,
   effect: "coverflow",
   coverflowEffect: {
