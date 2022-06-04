@@ -472,6 +472,155 @@ footer .footer-bottom .fb-content h6 {
   color: #323232;
 }
 
+.contact-hero-section {
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+}
+.contact-hero-section .chs-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-hero-section .chs-heading-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #f5f6f7;
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-hero-section .chs-heading-container h1 {
+  font-size: 7.5rem;
+  position: relative;
+  text-align: center;
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.contact-hero-section .chs-heading-container h1 .hero-heading-line-1 {
+  width: 45%;
+  height: 1px;
+  background-color: #323232;
+  position: absolute;
+  top: 0;
+  right: -10%;
+}
+.contact-hero-section .chs-heading-container h1 .hero-heading-line-2 {
+  width: 25%;
+  height: 1px;
+  background-color: #323232;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+}
+.contact-hero-section .chs-grid-container {
+  width: 100%;
+  height: 35vh;
+  background-color: #fff;
+}
+.contact-hero-section .chs-grid-container .chs-grid {
+  width: 75%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  grid-template-rows: auto;
+  grid-gap: 5rem;
+}
+.contact-hero-section .chs-grid-container .chs-grid .chs-grid-card {
+  width: 100%;
+  background-color: #323232;
+  padding: 3.5rem;
+  color: #fff;
+  border-radius: 1.5rem;
+  transform: translate(0, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-hero-section .chs-grid-container .chs-grid .chs-grid-card h4 {
+  font-size: 2.25rem;
+  text-align: center;
+}
+.contact-hero-section .chs-grid-container .chs-grid .chs-grid-card span {
+  width: 5rem;
+  height: 1px;
+  display: flex;
+  background-color: #f5f6f7;
+  margin: 0.5rem 0 2.5rem 0;
+}
+.contact-hero-section .chs-grid-container .chs-grid .chs-grid-card p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.fiverr-upwork-section {
+  width: 100%;
+}
+.fiverr-upwork-section .fus-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.fiverr-upwork-section .fus-content h3 {
+  font-size: 2.5rem;
+}
+.fiverr-upwork-section .fus-content .fus-grid {
+  width: 75%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 5rem;
+  margin: 7.5rem auto 0 auto;
+}
+.fiverr-upwork-section .fus-content .fus-grid .fus-grtid-card {
+  width: 100%;
+  background-color: #f5f6f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7.5rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.fiverr-upwork-section .fus-content .fus-grid .fus-grtid-card * {
+  transition: 0.25s;
+}
+.fiverr-upwork-section .fus-content .fus-grid .fus-grtid-card svg {
+  height: 4em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.fiverr-upwork-section .fus-content .fus-grid .fus-grtid-card img {
+  height: 4em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.fiverr-upwork-section .fus-content .fus-grid .fus-grtid-card:nth-child(1) {
+  background-color: #404145;
+}
+.fiverr-upwork-section .fus-content .fus-grid .fus-grtid-card:nth-child(1) .f-l-c {
+  fill: #fff !important;
+}
+.fiverr-upwork-section .fus-content .fus-grid .fus-grtid-card:nth-child(2) {
+  background-color: #14a800;
+}
+.fiverr-upwork-section .fus-content .fus-grid .fus-grtid-card:nth-child(2) .u-l-c {
+  fill: #fff !important;
+}
+
 @font-face {
   font-family: Nebula-Hollow;
   src: url(../assets/fonts/Nebula/Nebula-Hollow.otf) format("WOFF");
@@ -590,4 +739,23 @@ nav span {
   border-radius: 50%;
   margin: 0 1.5rem;
   display: flex;
+}
+
+.breadcrumb-section {
+  margin: 20rem 0 5rem 0;
+  width: 100%;
+}
+.breadcrumb-section .bcs-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.breadcrumb-section .bcs-content a {
+  font-size: 1.5rem;
+  color: #323232;
+}
+.breadcrumb-section .bcs-content span {
+  font-size: 1.5rem;
+  color: #323232;
+  margin: 0 2rem;
 }/*# sourceMappingURL=main.css.map */

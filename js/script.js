@@ -11,6 +11,7 @@ var swiper = new Swiper(".testimonials-swiper", {
   speed: 1000,
   spaceBetween: 100,
   centeredSlides: true,
+  loop: true,
   effect: "coverflow",
   coverflowEffect: {
     rotate: 50,

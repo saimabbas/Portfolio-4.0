@@ -106,3 +106,21 @@ nav {
     display: flex;
   }
 }
+.breadcrumb-section {
+  margin: 20rem 0 5rem 0;
+  width: 100%;
+  .bcs-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    a {
+      font-size: 1.5rem;
+      color: #323232;
+    }
+    span {
+      font-size: 1.5rem;
+      color: #323232;
+      margin: 0 2rem;
+    }
+  }
+}

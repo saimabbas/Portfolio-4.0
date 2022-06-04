@@ -1,0 +1,140 @@
+.contact-hero-section {
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+  .chs-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .chs-heading-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #f5f6f7;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      font-size: 7.5rem;
+      position: relative;
+      text-align: center;
+      position: relative;
+      width: max-content;
+      // margin: 17.5rem 0;
+      .hero-heading-line-1 {
+        width: 45%;
+        height: 1px;
+        background-color: #323232;
+        position: absolute;
+        top: 0;
+        right: -10%;
+      }
+      .hero-heading-line-2 {
+        width: 25%;
+        height: 1px;
+        background-color: #323232;
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+      }
+    }
+  }
+  .chs-grid-container {
+    width: 100%;
+    height: 35vh;
+    background-color: #fff;
+    .chs-grid {
+      width: 75%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 0 auto;
+      grid-template-rows: auto;
+      grid-gap: 5rem;
+      .chs-grid-card {
+        width: 100%;
+        background-color: #323232;
+        padding: 3.5rem;
+        color: #fff;
+        border-radius: 1.5rem;
+        transform: translate(0, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h4 {
+          font-size: 2.25rem;
+          text-align: center;
+        }
+        span {
+          width: 5rem;
+          height: 1px;
+          display: flex;
+          background-color: #f5f6f7;
+          margin: 0.5rem 0 2.5rem 0;
+        }
+        p {
+          font-size: 1.5rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+.fiverr-upwork-section {
+  width: 100%;
+  .fus-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    h3 {
+      font-size: 2.5rem;
+    }
+    .fus-grid {
+      width: 75%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      grid-gap: 5rem;
+      margin: 7.5rem auto 0 auto;
+      .fus-grtid-card {
+        width: 100%;
+        background-color: #f5f6f7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 7.5rem;
+        border-radius: 1.5rem;
+        cursor: pointer;
+        transition: 0.25s;
+        * {
+          transition: 0.25s;
+        }
+        svg {
+          height: 4em;
+          width: max-content;
+          object-fit: contain;
+        }
+        img {
+          height: 4em;
+          width: max-content;
+          object-fit: contain;
+        }
+      }
+      .fus-grtid-card:nth-child(1) {
+        background-color: #404145;
+        .f-l-c {
+          fill: #fff !important;
+        }
+      }
+      .fus-grtid-card:nth-child(2) {
+        background-color: #14a800;
+        .u-l-c {
+          fill: #fff !important;
+        }
+      }
+    }
+  }
+}
