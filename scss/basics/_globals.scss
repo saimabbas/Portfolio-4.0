@@ -128,7 +128,8 @@ nav {
   width: 100%;
   display: flex;
   align-items: center;
-  height: 65vh;
+  // height: 65vh;
+  padding: 15rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -166,11 +167,8 @@ nav {
 
 #circular-text {
   position: relative;
-  background: #fff;
-  color: #000;
   border-radius: 100%;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
-  padding: 20px;
+  font-size: 1.25rem;
 }
 
 #circular-text span {

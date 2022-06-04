@@ -22,12 +22,11 @@ var swiper = new Swiper(".testimonials-swiper", {
     slideShadows: false,
   },
 });
-
 const degreeToRadian = (angle) => {
   return angle * (Math.PI / 180);
 };
 
-const radius = 150;
+const radius = 65;
 const diameter = radius * 2;
 
 const circle = document.querySelector("#circular-text");

@@ -2,20 +2,189 @@
   width: 100%;
   position: relative;
   min-height: 100vh;
+  .chs-heading-container {
+    padding: 15rem 0 6.5rem 0;
+  }
   .about-distorted-section {
     width: 100%;
-    transform: translate(0, -9rem);
-  }
-  .ads-content {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    img {
-      width: 35rem;
-      height: 65rem;
-      object-fit: cover;
-      border-radius: 15rem 0 15rem 0;
+    position: relative;
+
+    .ads-content {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 40rem 1fr;
+      grid-template-rows: auto;
+      grid-gap: 3.5rem;
+      img {
+        width: 35rem;
+        height: 65rem;
+        object-fit: cover;
+        border-radius: 15rem 0 15rem 0;
+      }
+      .adsc-right-box {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+      .stats-grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2.5rem;
+        .stats-grid-card {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          h3 {
+            font-size: 5rem;
+            color: #323232;
+            font-weight: 500;
+          }
+          h4 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #323232;
+          }
+          h5 {
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: #949494;
+          }
+        }
+      }
+      .quote-box {
+        width: 100%;
+        h6 {
+          font-size: 1.75rem;
+          font-weight: 400;
+          line-height: 2.5rem;
+          margin: 0 0 1rem 0;
+        }
+        i {
+          font-size: 1.5rem;
+          width: 100%;
+          color: #949494;
+          text-align: right;
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
     }
   }
+  .about-left-line-circle-box {
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    left: 15%;
+    top: 23.5%;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    .about-left-line {
+      width: 1px;
+      height: 90vh;
+      background-color: #323232;
+    }
+    .about-left-circle {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      background-color: #fff;
+      padding: 1rem;
+      .dot {
+        width: 0.5rem;
+        height: 0.5rem;
+        background-color: #323232;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+      }
+    }
+  }
+}
+
+.para-section {
+  width: 100%;
+  margin: 15rem 0;
+  .para-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 7.5rem 0 0 0;
+    p {
+      width: 65%;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      color: #323232;
+      text-align: center;
+      margin: 0 0 2.5rem 0;
+      span {
+        color: green;
+        font-weight: 600;
+      }
+    }
+  }
+}
+.tech-stack-section {
+  width: 100%;
+  .tss-content {
+    width: 75%;
+    margin: 7.5rem auto 0 auto;
+    padding: 5rem;
+    background-color: #323232;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 2.5rem;
+    .tech-box {
+      width: 100%;
+      h6 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #fff;
+        margin: 0 0 0.75rem 0;
+      }
+      .tech-bar {
+        width: 100%;
+        height: 0.75rem;
+        background-color: rgba(255, 255, 255, 0.15);
+        .tech-bar-inner {
+          position: relative;
+          height: 0.75rem;
+          background-color: rgba(255, 255, 255, 1);
+          span {
+            font-size: 1.35rem;
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: #fff;
+            transform: translate(0, -150%);
+          }
+        }
+      }
+    }
+  }
+}
+.last-imp {
+  width: 100%;
+  text-align: center;
+  margin: 15rem 0 0 0;
+  font-size: 1.65rem;
+  font-weight: 500;
+  font-style: italic;
 }
