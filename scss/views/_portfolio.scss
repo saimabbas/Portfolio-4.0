@@ -1,0 +1,66 @@
+.portfolio-grid-section {
+  width: 100%;
+  .portfolio-grid {
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 2.5rem;
+    margin: 5rem auto 0 auto;
+    .portfolio-grid-card {
+      width: 100%;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      img {
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+        transition: 0.5s;
+        height: 25rem;
+        position: relative;
+        z-index: 15;
+      }
+      div {
+        width: 00%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        z-index: 20;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+        overflow: hidden;
+      }
+      h2 {
+        font-size: 2.5rem;
+        font-weight: 500;
+        z-index: 10;
+        color: #fff;
+        opacity: 0;
+        transition: 0.5s;
+        display: flex;
+        align-items: center;
+        i {
+          font-size: 2rem;
+          margin: 0 0 0 1.5rem;
+          display: flex;
+        }
+      }
+      &:hover {
+        img {
+          filter: blur(10px);
+        }
+        div {
+          width: 100%;
+          h2 {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
