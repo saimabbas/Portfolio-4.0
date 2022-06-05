@@ -64,3 +64,55 @@
     }
   }
 }
+.project-section {
+  padding: 15rem 0 0 0;
+  .project-section-content {
+    width: 65%;
+    margin: 0 auto;
+    p {
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      margin: 5rem 0 0 0;
+      color: #323232;
+    }
+    .project-heading {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      div {
+        h2 {
+          font-size: 3.5rem;
+          font-weight: 600;
+        }
+        h6 {
+          font-size: 1.5rem;
+          color: #949494;
+          font-weight: 400;
+        }
+      }
+      a {
+        background-color: #323232;
+        color: #fff;
+        font-size: 1.35rem;
+        padding: 1.25rem 2.5rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        i {
+          margin: 0 0 0 0.75rem;
+        }
+      }
+    }
+    .projects-pictures-grid {
+      width: 100%;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-gap: 5rem;
+      margin: 5rem 0 0 0;
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
