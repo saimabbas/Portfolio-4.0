@@ -1068,7 +1068,7 @@ footer .footer-bottom .fb-content h6 {
   top: 0;
   left: 0;
   transition: 0.5s;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 .ts-grid-card-simple:hover {
   background-color: rgba(0, 0, 0, 0.035);
