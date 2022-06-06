@@ -78,7 +78,22 @@
         padding: 7.5rem;
         border-radius: 1.5rem;
         cursor: pointer;
-        transition: 0.25s;
+        transition: 0.5s;
+        position: relative;
+        overflow: hidden;
+        a {
+          font-size: 1.25rem;
+          color: #fff;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translate(-50%, 150%);
+          z-index: 10;
+          transition: 0.5s;
+          i {
+            margin: 0 0 0 0.5rem;
+          }
+        }
         * {
           transition: 0.25s;
         }
@@ -91,6 +106,11 @@
           height: 4em;
           width: max-content;
           object-fit: contain;
+        }
+        &:hover {
+          a {
+            transform: translate(-50%, -1.25rem);
+          }
         }
       }
       .fus-grtid-card:nth-child(1) {

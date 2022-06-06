@@ -17,16 +17,17 @@
   </head>
   <body>
     <div class="app portfolio-page">
-      <main>
+      <main id='smooth-wrapper'>
+        <div id="smooth-content">
         <section class="about-hero-section" id="about-hero-section">
           <div class="chs-content">
             <div class="chs-heading-container">
-              <h1 class="nebula-regular">
+              <h1 class="page-heading nebula-regular">
                 <div class="hero-heading-line-1"></div>
                 <div class="hero-heading-line-2"></div>
                 PORTFOLIO
               </h1>
-              <h5>Your One Stop Shop for Passion and Creativity</h5>
+              <h5 class="page-subheading">Your One Stop Shop for Passion and Creativity</h5>
             </div>
           </div>
           <div class="portfolio-grid-section">
@@ -37,7 +38,7 @@
                     src="assets/img/portfolio-covers/portfolio-img-5-short.png"
                     alt=""
                   />
-                  <div style='background-color: rgba(255, 109, 11, 0.85);'>
+                  <div style='background-color: rgba(255, 109, 11, 0.75);'>
                     <h2  class="nebula-resgular">ProTutorOnline <i class="bi bi-box-arrow-up-right"></i></h2>
                   </div>
                 </div>
@@ -46,7 +47,7 @@
                     src="assets/img/portfolio-covers/portfolio-img-6-short.png"
                     alt=""
                   />
-                  <div style='background-color: rgba(255, 0, 123, 0.85);'>
+                  <div style='background-color: rgba(255, 0, 123, 0.75);'>
                     <h2  class="nebula-resgular">OutKast <i class="bi bi-box-arrow-up-right"></i></h2>
                   </div>
                 </div>
@@ -55,8 +56,17 @@
                     src="assets/img/portfolio-covers/portfolio-img-7-short.png"
                     alt=""
                   />
-                  <div style='background-color: rgba(103, 98, 244, 0.85);'>
+                  <div style='background-color: rgba(103, 98, 244, 0.75);'>
                     <h2  class="nebula-resgular">BadBoyOnTheFloor <i class="bi bi-box-arrow-up-right"></i></h2>
+                  </div>
+                </div>
+                <div class="portfolio-grid-card">
+                  <img
+                    src="assets/img/portfolio-covers/portfolio-img-5-short.png"
+                    alt=""
+                  />
+                  <div style='background-color: rgba(255, 109, 11, 0.75);'>
+                    <h2  class="nebula-resgular">ProTutorOnline <i class="bi bi-box-arrow-up-right"></i></h2>
                   </div>
                 </div>
               </div>
@@ -67,17 +77,50 @@
             <div class="box">
               <div class="header-content">
                 <div class="header-left">
-                  <div class="logo">
-                    <div class="logo-box"></div>
-                    <div class="logo-box"></div>
-                    <div class="logo-box"></div>
-                  </div>
+                  <a href="index.html">
+                    <div class="logo">
+                      <div class="logo-box"></div>
+                      <div class="logo-box"></div>
+                      <div class="logo-box"></div>
+                    </div>
+                  </a>
                 </div>
                 <div class="header-center">
-                  <a class="nebula-regular" href="index.html">HOME</a>
-                  <a class="nebula-regular" href="about.html">ABOUT</a>
-                  <a class="nebula-regular" href="contact.html">CONTACT</a>
-                  <a class="nebula-regular" href="portfolio.html">PORTFOLIO</a>
+                  <a href="index.html">
+                    <span>H</span>
+                    <span>O</span>
+                    <span>M</span>
+                    <span>E</span>
+                  </a>
+                  <a href="about.html">
+                    <span>A</span>
+                    <span>B</span>
+                    <span>O</span>
+                    <span>U</span>
+                    <span>T</span>
+                  </a>
+                  <i></i>
+                  <a href="contact.html">
+                    <span>C</span>
+                    <span>O</span>
+                    <span>N</span>
+                    <span>T</span>
+                    <span>A</span>
+                    <span>C</span>
+                    <span>T</span>
+                  </a>
+                  <i></i>
+                  <a href="portfolio.html">
+                    <span>P</span>
+                    <span>O</span>
+                    <span>R</span>
+                    <span>T</span>
+                    <span>F</span>
+                    <span>O</span>
+                    <span>L</span>
+                    <span>I</span>
+                    <span>O</span>
+                  </a>
                 </div>
                 <div class="header-right">
                   <a href="#">
@@ -182,9 +225,27 @@
             </div>
           </div>
         </footer>
+      </div>
       </main>
     </div>
+    <div class="loader" id="portfolio-loader">
+      <div class="loading-box">
+        <div class="logo" id="loader-logo-animation">
+          <div class="logo-box"></div>
+          <div class="logo-box"></div>
+          <div class="logo-box"></div>
+        </div>
+        <p class="nebula-regular">LOADING ...</p>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/gsap/gsap.min.js"></script>
+    <script src="js/gsap/ScrollSmoother.min.js"></script>
+    <script src="js/gsap/ScrollToPlugin.min.js"></script>
+    <script src="js/gsap/ScrollTrigger.min.js"></script>
+    <script src="js/gsap/SplitText.min.js"></script>
+    <script src="js/portfolio.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

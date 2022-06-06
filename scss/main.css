@@ -27,6 +27,17 @@ header .header-content .header-center a {
   color: #323232;
   text-decoration: none;
   transition: 0.25s;
+  display: flex;
+}
+header .header-content .header-center a * {
+  font-family: Nebula-Regular, "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+header .header-content .header-center a span {
+  transition: 0.5s;
+  display: block;
+}
+header .header-content .header-center a:hover span {
+  transform: rotateY(-180deg);
 }
 header .header-content .header-right {
   display: flex;
@@ -34,13 +45,24 @@ header .header-content .header-right {
   justify-content: flex-end;
 }
 header .header-content .header-right a {
-  margin: 0 0 0 2.25rem;
+  margin: 0 0 0 1.25rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.65rem;
+  transition: 0.5s;
+}
+header .header-content .header-right a:hover {
+  background-color: #f5f6f7;
+  transform: translate(0, -0.25rem);
 }
 header .header-content .header-right a img {
-  width: 1.75rem;
+  width: 2rem;
+  height: 2rem;
   -o-object-fit: contain;
      object-fit: contain;
-  opacity: 0.75;
 }
 
 .hero-section {
@@ -55,17 +77,32 @@ header .header-content .header-right a img {
   bottom: 0;
   left: 0;
 }
-.hero-section .saim {
+.hero-section .saim-box {
   width: 35%;
   height: 100vh;
-  -o-object-fit: cover;
-     object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
   transform: translate(0, 0);
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.hero-section .saim {
+  width: 35vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
   -webkit-clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
           clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
+}
+.hero-section .hero-heading-circle {
+  position: absolute;
+  bottom: 3.5rem;
+  left: 3.5rem;
+  z-index: 10;
+  color: #fff;
 }
 .hero-section .hero-section-content {
   width: 100%;
@@ -82,10 +119,29 @@ header .header-content .header-right a img {
   font-size: 10rem;
   position: relative;
 }
+.hero-section .hero-section-content h1 * div {
+  font-family: Nebula-Regular, "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.hero-section .hero-section-content h1 .hh-h1-box {
+  width: 12.5rem;
+  height: 3rem;
+  position: absolute;
+  top: 5rem;
+  left: 7.5rem;
+  z-index: 10;
+}
+.hero-section .hero-section-content h1 .hh-h1-box span {
+  width: 12.5rem;
+  height: 3rem;
+  background-color: #323232;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .hero-section .hero-section-content h1 .hero-heading-line-1 {
   width: 45%;
   height: 1px;
-  background-color: #323232;
+  background-color: rgba(0, 0, 0, 0.35);
   position: absolute;
   top: 0;
   right: -10%;
@@ -93,7 +149,7 @@ header .header-content .header-right a img {
 .hero-section .hero-section-content h1 .hero-heading-line-2 {
   width: 25%;
   height: 1px;
-  background-color: #323232;
+  background-color: rgba(0, 0, 0, 0.35);
   position: absolute;
   bottom: 0;
   left: 10%;
@@ -241,15 +297,13 @@ header .header-content .header-right a img {
 }
 .customers-section .customers-section-content .customers-grid .customers-grid-card {
   width: 100%;
-  padding: 4rem;
+  padding: 3.5rem;
   border-radius: 1rem;
   background-color: #f5f6f7;
 }
 .customers-section .customers-section-content .customers-grid .customers-grid-card img {
   width: 100%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  height: 5rem;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -416,7 +470,8 @@ footer .footer-center .fc-content .fc-bottom .fcb-left a {
   margin: 0 1.5rem 0 0;
 }
 footer .footer-center .fc-content .fc-bottom .fcb-left img {
-  width: 1.75rem;
+  width: 2rem;
+  height: 2rem;
   -o-object-fit: contain;
      object-fit: contain;
   opacity: 0.75;
@@ -556,7 +611,22 @@ footer .footer-bottom .fb-content h6 {
   padding: 7.5rem;
   border-radius: 1.5rem;
   cursor: pointer;
-  transition: 0.25s;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+}
+.fiverr-upwork-section .fus-content .fus-grid .fus-grtid-card a {
+  font-size: 1.25rem;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 150%);
+  z-index: 10;
+  transition: 0.5s;
+}
+.fiverr-upwork-section .fus-content .fus-grid .fus-grtid-card a i {
+  margin: 0 0 0 0.5rem;
 }
 .fiverr-upwork-section .fus-content .fus-grid .fus-grtid-card * {
   transition: 0.25s;
@@ -577,6 +647,9 @@ footer .footer-bottom .fb-content h6 {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.fiverr-upwork-section .fus-content .fus-grid .fus-grtid-card:hover a {
+  transform: translate(-50%, -1.25rem);
+}
 .fiverr-upwork-section .fus-content .fus-grid .fus-grtid-card:nth-child(1) {
   background-color: #404145;
 }
@@ -594,11 +667,11 @@ footer .footer-bottom .fb-content h6 {
   width: 100%;
 }
 .portfolio-grid-section .portfolio-grid {
-  width: 75%;
+  width: 85%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-gap: 2.5rem;
+  grid-gap: 5rem;
   margin: 5rem auto 0 auto;
 }
 .portfolio-grid-section .portfolio-grid .portfolio-grid-card {
@@ -614,7 +687,7 @@ footer .footer-bottom .fb-content h6 {
   -o-object-position: top;
      object-position: top;
   transition: 0.5s;
-  height: 25rem;
+  height: 27.5rem;
   position: relative;
   z-index: 15;
 }
@@ -688,7 +761,7 @@ footer .footer-bottom .fb-content h6 {
 .project-section .project-section-content .project-heading a {
   background-color: #323232;
   color: #fff;
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   padding: 1.25rem 2.5rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -728,12 +801,44 @@ footer .footer-bottom .fb-content h6 {
   justify-content: center;
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 40rem 1fr;
+  grid-template-columns: 1fr 35rem 1fr;
   grid-template-rows: auto;
-  grid-gap: 3.5rem;
+  grid-gap: 7.5rem;
+}
+.about-hero-section .about-distorted-section .ads-content .adsc-center-box {
+  width: 100%;
+  position: relative;
+}
+.about-hero-section .about-distorted-section .ads-content .adsc-center-box .about-img-line-1 {
+  width: 50%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  z-index: 10;
+}
+.about-hero-section .about-distorted-section .ads-content .adsc-center-box .about-img-line-2 {
+  width: 50%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: -1rem;
+  right: 0;
+  z-index: 10;
+}
+.about-hero-section .about-distorted-section .ads-content .about-img-box {
+  width: 100%;
+  height: 65rem;
+  border-radius: 15rem 0 15rem 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
 }
 .about-hero-section .about-distorted-section .ads-content img {
-  width: 35rem;
+  width: 100%;
   height: 65rem;
   -o-object-fit: cover;
      object-fit: cover;
@@ -782,11 +887,12 @@ footer .footer-bottom .fb-content h6 {
   font-weight: 400;
   line-height: 2.5rem;
   margin: 0 0 1rem 0;
+  color: #000;
 }
 .about-hero-section .about-distorted-section .ads-content .quote-box i {
   font-size: 1.5rem;
   width: 100%;
-  color: #949494;
+  color: #323232;
   text-align: right;
   display: flex;
   justify-content: flex-end;
@@ -800,7 +906,7 @@ footer .footer-bottom .fb-content h6 {
   height: max-content;
   position: absolute;
   left: 15%;
-  top: 23.5%;
+  top: 11.5%;
   width: max-content;
   display: flex;
   flex-direction: column;
@@ -808,6 +914,10 @@ footer .footer-bottom .fb-content h6 {
   padding: 0;
 }
 .about-hero-section .about-left-line-circle-box .about-left-line {
+  width: 1px;
+  height: 90vh;
+}
+.about-hero-section .about-left-line-circle-box .about-left-line div {
   width: 1px;
   height: 90vh;
   background-color: #323232;
@@ -863,11 +973,12 @@ footer .footer-bottom .fb-content h6 {
   width: 75%;
   margin: 7.5rem auto 0 auto;
   padding: 5rem;
-  background-color: #323232;
+  background-color: #f5f6f7;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-gap: 2.5rem;
+  overflow: hidden;
 }
 .tech-stack-section .tss-content .tech-box {
   width: 100%;
@@ -875,26 +986,26 @@ footer .footer-bottom .fb-content h6 {
 .tech-stack-section .tss-content .tech-box h6 {
   font-size: 1.5rem;
   font-weight: 400;
-  color: #fff;
+  color: #323232;
   margin: 0 0 0.75rem 0;
 }
 .tech-stack-section .tss-content .tech-box .tech-bar {
   width: 100%;
   height: 0.75rem;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(0, 0, 0, 0.15);
 }
 .tech-stack-section .tss-content .tech-box .tech-bar .tech-bar-inner {
   position: relative;
   height: 0.75rem;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.85);
 }
 .tech-stack-section .tss-content .tech-box .tech-bar .tech-bar-inner span {
   font-size: 1.35rem;
   position: absolute;
   top: 0;
   right: 0;
-  color: #fff;
-  transform: translate(0, -150%);
+  color: #323232;
+  transform: translate(0, -125%);
 }
 
 .last-imp {
@@ -953,11 +1064,11 @@ button {
 }
 
 .nebula-regular {
-  font-family: Nebula-Regular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Nebula-Regular, "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .nebula-hollow {
-  font-family: Nebula-Hollow, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Nebula-Hollow, "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .section-heading {
@@ -970,6 +1081,9 @@ button {
 }
 .section-heading h3 {
   font-size: 2.5rem;
+}
+.section-heading h3 * {
+  font-family: Nebula-Regular, "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .section-heading h4 {
   font-size: 1.5rem;
@@ -999,6 +1113,9 @@ main {
   transform: rotate(45deg);
   transition: 0.5s;
 }
+.logo:hover .logo-box {
+  transform: rotate(-45deg);
+}
 
 nav {
   width: -webkit-max-content;
@@ -1008,21 +1125,32 @@ nav {
   height: -moz-max-content;
   height: max-content;
   position: absolute;
-  bottom: 20rem;
+  bottom: 22.5rem;
   right: 0;
-  transform: translate(13em, 0) rotate(-90deg);
+  transform: translate(15rem, 0) rotate(-90deg);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 nav a {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   color: #323232;
+  display: flex;
 }
-nav span {
+nav a span {
+  transition: 0.5s;
+  display: block;
+  font-family: Nebula-Regular, "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+nav a:hover span {
+  transform: rotateY(-180deg);
+}
+nav i {
+  width: 3px;
+  height: 3px;
   background-color: #323232;
   border-radius: 50%;
-  margin: 0 1.5rem;
+  margin: 0 2.5rem;
   display: flex;
 }
 
@@ -1086,13 +1214,52 @@ nav span {
   margin: 2.5rem 0 0 0;
 }
 
-#circular-text {
+.circular-text {
   position: relative;
   border-radius: 100%;
   font-size: 1.25rem;
+  font-weight: 400;
 }
 
-#circular-text span {
+.circular-text span {
   position: absolute;
   transform-origin: top left;
+}
+
+.loader {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 100021;
+  transition: 0.5s;
+  overflow: hidden;
+  padding: 5rem;
+}
+.loader .logo-box {
+  width: 1rem;
+  height: 1rem;
+  transition: unset;
+}
+.loader .loading-box {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.5rem 2.5rem 0.5rem 1rem;
+  border-radius: 1000px;
+}
+.loader .loading-box p {
+  font-size: 1.5rem;
+  color: #000;
+  margin: 0 0 0 0.5rem;
+}
+
+.page-heading * {
+  font-family: Nebula-Regular, "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }/*# sourceMappingURL=main.css.map */

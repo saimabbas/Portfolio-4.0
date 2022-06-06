@@ -1,11 +1,11 @@
 .portfolio-grid-section {
   width: 100%;
   .portfolio-grid {
-    width: 75%;
+    width: 85%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-gap: 2.5rem;
+    grid-gap: 5rem;
     margin: 5rem auto 0 auto;
     .portfolio-grid-card {
       width: 100%;
@@ -17,7 +17,7 @@
         object-fit: cover;
         object-position: top;
         transition: 0.5s;
-        height: 25rem;
+        height: 27.5rem;
         position: relative;
         z-index: 15;
       }
@@ -94,7 +94,7 @@
       a {
         background-color: #323232;
         color: #fff;
-        font-size: 1.35rem;
+        font-size: 1.5rem;
         padding: 1.25rem 2.5rem;
         font-weight: 500;
         text-transform: uppercase;
