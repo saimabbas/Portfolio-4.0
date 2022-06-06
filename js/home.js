@@ -204,17 +204,44 @@ LoaderFadeAnimationHome.to(".loading-box", {
     },
     "<0.5"
   );
+/* .fromTo(
+    "nav a span",
+    {
+      opacity: 0,
+      x: "5rem",
+      rotateY: "90deg",
+    },
+    {
+      opacity: 1,
+      x: "0",
+      rotateY: "0deg",
+      duration: 0.15,
+      stagger: 0.025,
+      ease: Power4.easeInOut,
+    },
+    "<0.25"
+  )
+  .fromTo(
+    "nav i",
+    {
+      opacity: 0,
+    },
+    {
+      opacity: 1,
+      duration: 0.15,
+      ease: Power4.easeInOut,
+    },
+    "<0"
+  ); */
 
 // Loader
 $(window).on("load", function () {
-  setTimeout(() => {
-    LoaderFadeAnimationHome.play();
-  }, 250);
+  LoaderFadeAnimationHome.play();
 });
 
 // Hero Text Circle Animation
 gsap.fromTo(
-  ".hero-heading-circle ",
+  ".hero-heading-circle",
   {
     rotate: "0",
   },

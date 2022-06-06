@@ -166,7 +166,8 @@ LoaderFadeAnimationAbout.to(".loading-box", {
     {
       height: "90vh",
       duration: 1,
-    }
+    },
+    "<0.5"
   );
 /* .fromTo(
     ".about-img-box",
@@ -226,7 +227,7 @@ let AboutScrollAnimations = gsap.timeline({
     trigger: ".ads-content",
     toggleActions: "start pause resume none",
     start: "bottom 95.5%",
-    end: "bottom -75%",
+    end: "bottom -15%",
     scrub: 1,
     pin: true,
     pinSpacing: true,
@@ -238,10 +239,12 @@ AboutScrollAnimations.fromTo(
   {
     opacity: 0,
     rotateY: "90deg",
+    scale: 2.25,
   },
   {
     opacity: 1,
     rotateY: "0",
+    scale: 1,
     duration: 1.15,
     stagger: 0.35,
     ease: Power4.easeInOut,
