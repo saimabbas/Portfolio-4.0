@@ -704,7 +704,7 @@ footer .footer-bottom .fb-content h6 {
   left: 0;
   transition: 0.5s;
   overflow: hidden;
-  background-color: #323232 !important;
+  background-color: rgba(0, 0, 0, 0.85) !important;
 }
 .portfolio-grid-section .portfolio-grid .portfolio-grid-card h2 {
   font-size: 2.5rem;
@@ -722,7 +722,7 @@ footer .footer-bottom .fb-content h6 {
   display: flex;
 }
 .portfolio-grid-section .portfolio-grid .portfolio-grid-card:hover img {
-  filter: blur(10px);
+  filter: blur(20px);
 }
 .portfolio-grid-section .portfolio-grid .portfolio-grid-card:hover div {
   width: 100%;
@@ -1033,7 +1033,7 @@ footer .footer-bottom .fb-content h6 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
-  grid-gap: 2.5rem;
+  grid-gap: 3.5rem;
 }
 .tech-stack-grid-simple p {
   font-size: 1.5rem;
@@ -1059,6 +1059,9 @@ footer .footer-bottom .fb-content h6 {
   width: 100%;
   position: relative;
   transition: 0.75s;
+  /* &:hover {
+    background-color: rgba(0, 0, 0, 0.035);
+  } */
 }
 .ts-grid-card-simple .percentage-box {
   width: 0%;
@@ -1069,9 +1072,6 @@ footer .footer-bottom .fb-content h6 {
   left: 0;
   transition: 0.5s;
   background-color: rgba(0, 0, 0, 0.1);
-}
-.ts-grid-card-simple:hover {
-  background-color: rgba(0, 0, 0, 0.035);
 }
 .ts-grid-card-simple:nth-child(1):hover .percentage-box {
   width: 90%;
