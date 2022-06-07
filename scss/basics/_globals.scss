@@ -269,8 +269,11 @@ nav {
     padding: 0 2rem;
   }
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 550px) {
   nav {
     display: none;
+  }
+  .circular-text {
+    font-size: 1rem;
   }
 }
