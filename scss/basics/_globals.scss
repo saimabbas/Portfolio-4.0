@@ -251,3 +251,26 @@ nav {
       "Helvetica Neue", sans-serif;
   }
 }
+@media screen and (max-width: 1150px) {
+  .box {
+    padding: 0 5rem;
+  }
+  nav {
+    bottom: 20rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .box {
+    padding: 0 3.5rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .box {
+    padding: 0 2rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  nav {
+    display: none;
+  }
+}

@@ -59,10 +59,9 @@ var swiper = new Swiper(".testimonials-swiper", {
     nextEl: ".testimoonial-right",
     prevEl: ".testimoonial-left",
   },
-  autoHeight: false,
+  autoHeight: true,
   speed: 1000,
-  spaceBetween: 100,
-  centeredSlides: true,
+  spaceBetween: 15,
   loop: true,
   slidesPerView: 1,
   effect: "coverflow",
@@ -72,6 +71,20 @@ var swiper = new Swiper(".testimonials-swiper", {
     depth: 100,
     modifier: 1,
     slideShadows: false,
+  },
+  breakpoints: {
+    550: {
+      spaceBetween: 100,
+      autoHeight: false,
+      effect: "coverflow",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: false,
+      },
+    },
   },
 });
 
