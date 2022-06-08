@@ -767,8 +767,11 @@ header .header-content .header-right a {
   }
 
   .customers-section .customers-section-content .customers-grid .customers-grid-card {
-    padding: 1.5rem;
+    padding: 2.5rem;
     border-radius: 0.5rem;
+  }
+  .customers-section .customers-section-content .customers-grid .customers-grid-card img {
+    height: 3.5rem;
   }
 
   .customers-section .customers-section-content,
