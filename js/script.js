@@ -297,7 +297,7 @@ $(".close-mob-header").click(() => {
   $(".close-mob-header").css({ display: "none" });
 });
 
-function myFunction(x) {
+/* function myFunction(x) {
   if (x.matches) {
     ScrollSmoother.create({
       smooth: 1.15,
@@ -311,7 +311,7 @@ function myFunction(x) {
       smoothTouch: 0,
     });
   }
-}
+} */
 
 var x = window.matchMedia("(max-width: 550px)");
 myFunction(x); // Call listener function at run time
