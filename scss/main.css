@@ -480,7 +480,11 @@ header .header-mob .header-mob-content a:active {
 }
 
 footer {
-  margin: 15rem 0 0 0;
+  margin: 15rem 0 2.5rem 0;
+}
+footer .footer-stabalizer {
+  height: 0.25rem;
+  width: 100%;
 }
 footer .footer-top .logo {
   transform: scale(2) translate(1rem, 0);

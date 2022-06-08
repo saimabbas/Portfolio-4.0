@@ -486,7 +486,11 @@ header {
   }
 }
 footer {
-  margin: 15rem 0 0 0;
+  margin: 15rem 0 2.5rem 0;
+  .footer-stabalizer {
+    height: 0.25rem;
+    width: 100%;
+  }
   .footer-top {
     .logo {
       transform: scale(2) translate(1rem, 0);
