@@ -300,7 +300,7 @@ $(".close-mob-header").click(() => {
 function myFunction(x) {
   if (x.matches) {
     ScrollSmoother.create({
-      smooth: 1,
+      smooth: 0,
       effects: false,
       smoothTouch: 0,
     });
