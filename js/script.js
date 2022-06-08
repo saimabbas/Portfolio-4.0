@@ -296,3 +296,23 @@ $(".close-mob-header").click(() => {
   console.log("Close Clicked");
   $(".close-mob-header").css({ display: "none" });
 });
+
+function myFunction(x) {
+  if (x.matches) {
+    ScrollSmoother.create({
+      smooth: 1,
+      effects: false,
+      smoothTouch: 0,
+    });
+  } else {
+    ScrollSmoother.create({
+      smooth: 1.15,
+      effects: true,
+      smoothTouch: 0,
+    });
+  }
+}
+
+var x = window.matchMedia("(max-width: 550px)");
+myFunction(x); // Call listener function at run time
+x.addListener(myFunction); // Attach listener function on state changes
