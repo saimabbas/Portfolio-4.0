@@ -164,7 +164,7 @@ nav {
   display: flex;
   align-items: center;
   // height: 65vh;
-  padding: 15rem 0;
+  padding: 15rem 0 6.5rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -275,5 +275,11 @@ nav {
   }
   .circular-text {
     font-size: 1rem;
+  }
+  .chs-heading-container h1 {
+    font-size: 4.25rem;
+  }
+  .breadcrumb-section {
+    margin: 10rem 0 5rem 0;
   }
 }

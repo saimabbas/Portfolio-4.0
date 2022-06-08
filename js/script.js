@@ -237,3 +237,64 @@ TechAnimation.fromTo(
     stagger: 0.05,
   }
 );
+let MobHeaderAnimation = gsap.timeline({
+  paused: true,
+});
+MobHeaderAnimation.fromTo(
+  ".header-mob",
+  {
+    height: 0,
+  },
+  {
+    height: "100vh",
+    ease: Power4.easeInOut,
+    duration: 0.75,
+  }
+)
+  .fromTo(
+    ".menu-icon-line-small",
+    {
+      x: "0",
+    },
+    {
+      x: "-1.5rem",
+      ease: Power4.easeInOut,
+      duration: 0.75,
+    },
+    "<0"
+  )
+  .fromTo(
+    ".header-mob a",
+    {
+      y: "10rem",
+      rotateX: "90deg",
+      opacity: 0,
+    },
+    {
+      y: "0",
+      rotateX: "0",
+      opacity: 1,
+      stagger: 0.1,
+      ease: Power4.easeInOut,
+      duration: 1.25,
+    },
+    "<0"
+  );
+$(document).ready(function () {
+  $(".open-mob-header").click(() => {
+    $("html").css({ overflowY: "hidden" });
+    $("body").css({ overflowY: "hidden" });
+    $(".menu-icon").addClass("close-mob-header");
+    $(".menu-icon").removeClass("open-mob-header");
+    MobHeaderAnimation.play(0);
+    console.log("Open Clicked");
+  });
+  $(".close-mob-header").click(() => {
+    $("html").css({ overflowY: "auto" });
+    $("body").css({ overflowY: "auto" });
+    $(".menu-icon").addClass("open-mob-header");
+    $(".menu-icon").removeClass("close-mob-header");
+    MobHeaderAnimation.play(0);
+    console.log("Close Clicked");
+  });
+});

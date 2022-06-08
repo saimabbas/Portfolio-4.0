@@ -1,10 +1,6 @@
 .contact-hero-section {
   width: 100%;
   position: relative;
-  min-height: 100vh;
-  .chs-heading-container {
-    background-color: #f5f6f7;
-  }
   .chs-content {
     width: 100%;
     display: flex;
@@ -14,10 +10,11 @@
 
   .chs-grid-container {
     width: 100%;
-    height: 35vh;
-    background-color: #fff;
+    padding: 7.5rem 0;
+    margin: 0 0 10rem 0;
+    background-color: #f5f6f7;
     .chs-grid {
-      width: 75%;
+      width: 85%;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       margin: 0 auto;
@@ -29,7 +26,6 @@
         padding: 3.5rem;
         color: #fff;
         border-radius: 1.5rem;
-        transform: translate(0, -50%);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -126,5 +122,43 @@
         }
       }
     }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .contact-hero-section .chs-grid-container .chs-grid,
+  .fiverr-upwork-section .fus-content .fus-grid {
+    width: 100%;
+    grid-gap: 3.5rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .contact-hero-section .chs-grid-container .chs-grid,
+  .fiverr-upwork-section .fus-content .fus-grid {
+    width: 100%;
+    grid-gap: 2.5rem;
+  }
+  .contact-hero-section .chs-grid-container {
+    padding: 3.5rem 0;
+  }
+}
+@media screen and (max-width: 850px) {
+  .contact-hero-section .chs-grid-container .chs-grid {
+    grid-template-columns: 1fr;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .contact-hero-section .chs-grid-container .chs-grid {
+    width: 100%;
+  }
+  .fiverr-upwork-section .fus-content .fus-grid {
+    grid-template-columns: 1fr;
+    margin: 3.5rem auto 0 auto;
+  }
+  .fiverr-upwork-section .fus-content .fus-grid .fus-grtid-card {
+    padding: 6.5rem 0;
+  }
+  .fiverr-upwork-section .fus-content .fus-grid .fus-grtid-card svg {
+    height: 3.5rem;
   }
 }
