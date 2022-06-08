@@ -17,11 +17,11 @@ gsap.fromTo(
 );
 
 // Smooth Scrolling Effect
-ScrollSmoother.create({
+/* ScrollSmoother.create({
   smooth: 1.15,
   effects: true,
   smoothTouch: 0,
-});
+}); */
 
 // Section headings animation
 const shArr = [
@@ -297,13 +297,13 @@ $(".close-mob-header").click(() => {
   $(".close-mob-header").css({ display: "none" });
 });
 
-/* function myFunction(x) {
+function myFunction(x) {
   if (x.matches) {
-    ScrollSmoother.create({
+    /* ScrollSmoother.create({
       smooth: 1.15,
       effects: true,
       smoothTouch: 0,
-    });
+    }); */
   } else {
     ScrollSmoother.create({
       smooth: 1.15,
@@ -311,7 +311,7 @@ $(".close-mob-header").click(() => {
       smoothTouch: 0,
     });
   }
-} */
+}
 
 var x = window.matchMedia("(max-width: 550px)");
 myFunction(x); // Call listener function at run time
