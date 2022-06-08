@@ -17,11 +17,11 @@ gsap.fromTo(
 );
 
 // Smooth Scrolling Effect
-/* ScrollSmoother.create({
+ScrollSmoother.create({
   smooth: 1.15,
   effects: true,
   smoothTouch: 0,
-}); */
+});
 
 // Section headings animation
 const shArr = [
