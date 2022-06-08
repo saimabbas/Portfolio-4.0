@@ -280,21 +280,19 @@ MobHeaderAnimation.fromTo(
     },
     "<0"
   );
-$(document).ready(function () {
-  $(".open-mob-header").click(() => {
-    $("html").css({ overflowY: "hidden" });
-    $("body").css({ overflowY: "hidden" });
-    $(".menu-icon").addClass("close-mob-header");
-    $(".menu-icon").removeClass("open-mob-header");
-    MobHeaderAnimation.play(0);
-    console.log("Open Clicked");
-  });
-  $(".close-mob-header").click(() => {
-    $("html").css({ overflowY: "auto" });
-    $("body").css({ overflowY: "auto" });
-    $(".menu-icon").addClass("open-mob-header");
-    $(".menu-icon").removeClass("close-mob-header");
-    MobHeaderAnimation.play(0);
-    console.log("Close Clicked");
-  });
+$(".open-mob-header").click(() => {
+  $("html").css({ overflowY: "hidden" });
+  $("body").css({ overflowY: "hidden" });
+  $(".close-mob-header").css({ display: "flex" });
+  MobHeaderAnimation.play(0);
+  console.log("Open Clicked");
+  $(".open-mob-header").css({ display: "none" });
+});
+$(".close-mob-header").click(() => {
+  $("html").css({ overflowY: "auto" });
+  $("body").css({ overflowY: "auto" });
+  $(".open-mob-header").css({ display: "flex" });
+  MobHeaderAnimation.reverse();
+  console.log("Close Clicked");
+  $(".close-mob-header").css({ display: "none" });
 });

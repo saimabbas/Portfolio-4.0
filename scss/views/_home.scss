@@ -47,6 +47,7 @@ header {
       display: flex;
       align-items: center;
       justify-content: flex-end;
+
       .menu-icon {
         width: max-content;
         display: none;
@@ -67,12 +68,12 @@ header {
           display: block;
           margin: 0.5rem 0;
         }
-        /*  span:nth-child(3) {
+        span:nth-child(3) {
           width: 2.25rem;
           height: 1px;
           background-color: rgba(255, 255, 255, 0.85);
           display: block;
-        } */
+        }
       }
       a {
         margin: 0 0 0 1rem;
@@ -816,4 +817,7 @@ footer {
 
 .hero-section header .header-content .header-right .menu-icon span {
   background-color: rgba(255, 255, 255, 0.85);
+}
+.close-mob-header {
+  display: none;
 }
