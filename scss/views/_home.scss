@@ -228,7 +228,7 @@ header {
       letter-spacing: 1.25rem;
       text-align: center;
     }
-    button {
+    & > a {
       background-color: rgba(0, 0, 0, 0.85);
       padding: 1.25rem 3.5rem;
       font-size: 1.5rem;
@@ -518,21 +518,23 @@ footer {
         margin: 0 0 5rem 0;
         padding: 0 0 5rem 0;
         border-bottom: 1px solid #323232;
+        a,
         h6 {
           font-size: 1.5rem;
           font-weight: 700;
           width: 100%;
           padding: 0.5rem 0;
+          color: #000;
           span {
             font-weight: 500;
           }
         }
-        h6:nth-child(2) {
+        & :nth-child(2) {
           text-align: center;
           border-left: 1px solid #323232;
           border-right: 1px solid #323232;
         }
-        h6:nth-child(3) {
+        & :nth-child(3) {
           text-align: right;
         }
       }
@@ -547,13 +549,25 @@ footer {
           display: flex;
           align-items: center;
           a {
-            margin: 0 1.5rem 0 0;
-          }
-          img {
-            width: 2rem;
-            height: 2rem;
-            object-fit: contain;
-            opacity: 0.75;
+            margin: 0 0 0 1rem;
+            width: 3.5rem;
+            height: 3.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.65rem;
+            transition: 0.5s;
+            color: #000;
+            cursor: pointer;
+            &:hover {
+              background-color: #fff;
+              transform: translate(0, -0.25rem);
+            }
+            i {
+              font-size: 2rem;
+              object-fit: contain;
+              cursor: pointer;
+            }
           }
         }
         .fcb-right {
@@ -575,10 +589,13 @@ footer {
             border-radius: 0.5rem;
             cursor: pointer;
             transition: 0.5s;
+            &:hover {
+              transform: translate(0, -0.5rem);
+            }
           }
         }
         .fcb-center {
-          width: 100%;
+          width: max-content;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -587,9 +604,26 @@ footer {
           left: 50%;
           transform: translate(-50%, -50%);
           a {
-            font-size: 1.35rem;
-            color: #000;
+            font-size: 1.5rem;
             margin: 0 3.5rem;
+            color: #323232;
+            text-decoration: none;
+            transition: 0.25s;
+            display: flex;
+            * {
+              font-family: Nebula-Regular, "Open Sans", -apple-system,
+                BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+                Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            }
+            span {
+              transition: 0.5s;
+              display: block;
+            }
+            &:hover {
+              span {
+                transform: rotateY(-180deg);
+              }
+            }
           }
         }
       }

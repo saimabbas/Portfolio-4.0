@@ -95,7 +95,7 @@ main {
   .logo-box {
     width: 1.75rem;
     height: 1.75rem;
-    background-color: #323232;
+    background-color: #000;
     transform: rotate(45deg);
     transition: 0.5s;
   }
@@ -282,4 +282,12 @@ nav {
   .breadcrumb-section {
     margin: 10rem 0 5rem 0;
   }
+}
+.white-bg {
+  background-color: rgba(255, 255, 255, 1);
+  transition: 0.5s;
+}
+.logo .logo-box.white-bg,
+header .header-content .header-right .menu-icon span.white-bg {
+  background-color: rgba(255, 255, 255, 1);
 }

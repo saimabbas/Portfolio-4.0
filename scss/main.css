@@ -227,7 +227,7 @@ header .header-mob .header-mob-content a:active {
   letter-spacing: 1.25rem;
   text-align: center;
 }
-.hero-section .hero-section-content button {
+.hero-section .hero-section-content > a {
   background-color: rgba(0, 0, 0, 0.85);
   padding: 1.25rem 3.5rem;
   font-size: 1.5rem;
@@ -514,21 +514,24 @@ footer .footer-center .fc-content .fc-top {
   padding: 0 0 5rem 0;
   border-bottom: 1px solid #323232;
 }
+footer .footer-center .fc-content .fc-top a,
 footer .footer-center .fc-content .fc-top h6 {
   font-size: 1.5rem;
   font-weight: 700;
   width: 100%;
   padding: 0.5rem 0;
+  color: #000;
 }
+footer .footer-center .fc-content .fc-top a span,
 footer .footer-center .fc-content .fc-top h6 span {
   font-weight: 500;
 }
-footer .footer-center .fc-content .fc-top h6:nth-child(2) {
+footer .footer-center .fc-content .fc-top :nth-child(2) {
   text-align: center;
   border-left: 1px solid #323232;
   border-right: 1px solid #323232;
 }
-footer .footer-center .fc-content .fc-top h6:nth-child(3) {
+footer .footer-center .fc-content .fc-top :nth-child(3) {
   text-align: right;
 }
 footer .footer-center .fc-content .fc-bottom {
@@ -544,14 +547,26 @@ footer .footer-center .fc-content .fc-bottom .fcb-left {
   align-items: center;
 }
 footer .footer-center .fc-content .fc-bottom .fcb-left a {
-  margin: 0 1.5rem 0 0;
+  margin: 0 0 0 1rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.65rem;
+  transition: 0.5s;
+  color: #000;
+  cursor: pointer;
 }
-footer .footer-center .fc-content .fc-bottom .fcb-left img {
-  width: 2rem;
-  height: 2rem;
+footer .footer-center .fc-content .fc-bottom .fcb-left a:hover {
+  background-color: #fff;
+  transform: translate(0, -0.25rem);
+}
+footer .footer-center .fc-content .fc-bottom .fcb-left a i {
+  font-size: 2rem;
   -o-object-fit: contain;
      object-fit: contain;
-  opacity: 0.75;
+  cursor: pointer;
 }
 footer .footer-center .fc-content .fc-bottom .fcb-right {
   width: 100%;
@@ -574,8 +589,13 @@ footer .footer-center .fc-content .fc-bottom .fcb-right .back-to-top {
   cursor: pointer;
   transition: 0.5s;
 }
+footer .footer-center .fc-content .fc-bottom .fcb-right .back-to-top:hover {
+  transform: translate(0, -0.5rem);
+}
 footer .footer-center .fc-content .fc-bottom .fcb-center {
-  width: 100%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -585,9 +605,22 @@ footer .footer-center .fc-content .fc-bottom .fcb-center {
   transform: translate(-50%, -50%);
 }
 footer .footer-center .fc-content .fc-bottom .fcb-center a {
-  font-size: 1.35rem;
-  color: #000;
+  font-size: 1.5rem;
   margin: 0 3.5rem;
+  color: #323232;
+  text-decoration: none;
+  transition: 0.25s;
+  display: flex;
+}
+footer .footer-center .fc-content .fc-bottom .fcb-center a * {
+  font-family: Nebula-Regular, "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+footer .footer-center .fc-content .fc-bottom .fcb-center a span {
+  transition: 0.5s;
+  display: block;
+}
+footer .footer-center .fc-content .fc-bottom .fcb-center a:hover span {
+  transform: rotateY(-180deg);
 }
 footer .footer-bottom {
   width: 100%;
@@ -898,9 +931,34 @@ header .header-content .header-right a {
   background-color: #f5f6f7;
   margin: 0.5rem 0 2.5rem 0;
 }
-.contact-hero-section .chs-grid-container .chs-grid .chs-grid-card p {
+.contact-hero-section .chs-grid-container .chs-grid .chs-grid-card p,
+.contact-hero-section .chs-grid-container .chs-grid .chs-grid-card a {
   font-size: 1.5rem;
   text-align: center;
+  margin: 0 0 0.25rem 0;
+  width: 100%;
+  color: #fff;
+}
+.contact-hero-section .chs-grid-container .chs-grid .chs-grid-card p i,
+.contact-hero-section .chs-grid-container .chs-grid .chs-grid-card a i {
+  font-size: 1.5rem;
+  margin: 0 0.5rem 0 0;
+}
+
+.whatsapp {
+  width: 6.5rem;
+  height: 6.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: #fff;
+  background-color: #323232;
+  border-radius: 1000px;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  cursor: pointer;
 }
 
 .fiverr-upwork-section {
@@ -936,7 +994,7 @@ header .header-content .header-right a {
   position: relative;
   overflow: hidden;
 }
-.fiverr-upwork-section .fus-content .fus-grid .fus-grtid-card a {
+.fiverr-upwork-section .fus-content .fus-grid .fus-grtid-card p {
   font-size: 1.25rem;
   color: #fff;
   position: absolute;
@@ -946,7 +1004,7 @@ header .header-content .header-right a {
   z-index: 10;
   transition: 0.5s;
 }
-.fiverr-upwork-section .fus-content .fus-grid .fus-grtid-card a i {
+.fiverr-upwork-section .fus-content .fus-grid .fus-grtid-card p i {
   margin: 0 0 0 0.5rem;
 }
 .fiverr-upwork-section .fus-content .fus-grid .fus-grtid-card * {
@@ -968,7 +1026,7 @@ header .header-content .header-right a {
   -o-object-fit: contain;
      object-fit: contain;
 }
-.fiverr-upwork-section .fus-content .fus-grid .fus-grtid-card:hover a {
+.fiverr-upwork-section .fus-content .fus-grid .fus-grtid-card:hover p {
   transform: translate(-50%, -1.25rem);
 }
 .fiverr-upwork-section .fus-content .fus-grid .fus-grtid-card:nth-child(1) {
@@ -1049,7 +1107,7 @@ header .header-content .header-right a {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
-  transition: 0.5s;
+  transition: 1s;
   height: 27.5rem;
   position: relative;
   z-index: 15;
@@ -1065,7 +1123,7 @@ header .header-content .header-right a {
   position: absolute;
   top: 0;
   left: 0;
-  transition: 0.5s;
+  transition: 0.65s;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.85) !important;
 }
@@ -1726,7 +1784,7 @@ main {
 .logo .logo-box {
   width: 1.75rem;
   height: 1.75rem;
-  background-color: #323232;
+  background-color: #000;
   transform: rotate(45deg);
   transition: 0.5s;
 }
@@ -1916,4 +1974,13 @@ nav i {
   .breadcrumb-section {
     margin: 10rem 0 5rem 0;
   }
+}
+.white-bg {
+  background-color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+
+.logo .logo-box.white-bg,
+header .header-content .header-right .menu-icon span.white-bg {
+  background-color: rgb(255, 255, 255);
 }/*# sourceMappingURL=main.css.map */

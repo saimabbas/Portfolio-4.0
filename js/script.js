@@ -306,6 +306,10 @@ $(".open-mob-header").click(() => {
   MobHeaderAnimation.play(0);
   console.log("Open Clicked");
   $(".open-mob-header").css({ display: "none" });
+  $(".logo .logo-box").addClass("white-bg");
+  $("header .header-content .header-right .menu-icon span").addClass(
+    "white-bg"
+  );
 });
 $(".close-mob-header").click(() => {
   $("html").css({ overflowY: "auto" });
@@ -314,4 +318,8 @@ $(".close-mob-header").click(() => {
   MobHeaderAnimation.reverse();
   console.log("Close Clicked");
   $(".close-mob-header").css({ display: "none" });
+  $(".logo .logo-box").removeClass("white-bg");
+  $("header .header-content .header-right .menu-icon span").removeClass(
+    "white-bg"
+  );
 });
