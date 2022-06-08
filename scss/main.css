@@ -256,10 +256,16 @@ header .header-mob .header-mob-content a:active {
   font-size: 1.5rem;
   font-weight: 500;
   color: #000;
+  display: flex;
 }
 .why-section .why-section-content a i {
   margin: 0 0 0 1.5rem;
   font-size: 1.65rem;
+  transition: 0.5s;
+  display: block;
+}
+.why-section .why-section-content a:hover i {
+  transform: translate(0.75rem, 0);
 }
 
 .packages-section {
@@ -321,12 +327,12 @@ header .header-mob .header-mob-content a:active {
   font-size: 1.25rem;
   font-weight: 400;
 }
-.packages-section .packages-grid .packages-grid-card .pgc-bottom a {
+.packages-section .packages-grid .packages-grid-card .pgc-bottom p {
   color: #000;
   font-size: 1.5rem;
   font-weight: 500;
 }
-.packages-section .packages-grid .packages-grid-card .pgc-bottom a i {
+.packages-section .packages-grid .packages-grid-card .pgc-bottom p i {
   margin: 0 0 0 0.5rem;
 }
 .packages-section .packages-grid .packages-grid-card:hover {
@@ -334,7 +340,7 @@ header .header-mob .header-mob-content a:active {
   color: #fff;
   transform: scale(1.035);
 }
-.packages-section .packages-grid .packages-grid-card:hover a {
+.packages-section .packages-grid .packages-grid-card:hover p {
   color: #fff;
 }
 .packages-section .packages-grid .packages-grid-card:hover .logo {
@@ -401,25 +407,22 @@ header .header-mob .header-mob-content a:active {
   left: unset;
   right: unset;
   transform: unset !important;
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 100%;  */
   margin: 2.5rem 0 0 0;
 }
 .testimonials-section .testimonials-section-content .testimonials-pagination .swiper-pagination-bullet {
   background-color: rgba(0, 0, 0, 0.15);
   opacity: 1;
-  width: 6px;
-  height: 6px;
+  /* width: 6px;
+  height: 6px; */
   transition: 0.5s;
 }
 .testimonials-section .testimonials-section-content .testimonials-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: rgba(0, 0, 0, 0.85);
   opacity: 1;
-  width: 25px;
-  border-radius: 1000px;
-  height: 6px;
 }
 .testimonials-section .testimonials-section-content .testimonials-navigation-box {
   width: 3.5rem;

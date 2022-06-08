@@ -258,9 +258,15 @@ header {
       font-size: 1.5rem;
       font-weight: 500;
       color: #000;
+      display: flex;
       i {
         margin: 0 0 0 1.5rem;
         font-size: 1.65rem;
+        transition: 0.5s;
+        display: block;
+      }
+      &:hover i {
+        transform: translate(0.75rem, 0);
       }
     }
   }
@@ -324,7 +330,7 @@ header {
             font-weight: 400;
           }
         }
-        a {
+        p {
           color: #000;
           font-size: 1.5rem;
           font-weight: 500;
@@ -338,7 +344,7 @@ header {
         background-color: #323232;
         color: #fff;
         transform: scale(1.035);
-        a {
+        p {
           color: #fff;
         }
         .logo {
@@ -406,24 +412,24 @@ header {
       left: unset;
       right: unset;
       transform: unset !important;
-      display: flex;
+      /* display: flex;
       align-items: center;
       justify-content: center;
-      width: 100%;
+      width: 100%;  */
       margin: 2.5rem 0 0 0;
       .swiper-pagination-bullet {
         background-color: rgba(0, 0, 0, 0.15);
         opacity: 1;
-        width: 6px;
-        height: 6px;
+        /* width: 6px;
+        height: 6px; */
         transition: 0.5s;
       }
       .swiper-pagination-bullet.swiper-pagination-bullet-active {
         background-color: rgba(0, 0, 0, 0.85);
         opacity: 1;
-        width: 25px;
-        border-radius: 1000px;
-        height: 6px;
+        // width: 25px;
+        // border-radius: 1000px;
+        // height: 6px;
       }
     }
     .testimonials-navigation-box {

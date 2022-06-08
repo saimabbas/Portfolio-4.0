@@ -16,7 +16,8 @@ const HomeHeroPWords = HomeHeroP.words;
 // Testimonials Swiper
 var swiper = new Swiper(".testimonials-swiper", {
   pagination: {
-    el: ".testimonials-pagination",
+    el: ".swiper-pagination",
+    dynamicBullets: true,
   },
   navigation: {
     nextEl: ".testimoonial-right",
@@ -27,6 +28,7 @@ var swiper = new Swiper(".testimonials-swiper", {
   spaceBetween: 15,
   loop: true,
   slidesPerView: 1,
+  centeredSlides: true,
   effect: "coverflow",
   coverflowEffect: {
     rotate: 50,
