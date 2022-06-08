@@ -299,11 +299,7 @@ $(".close-mob-header").click(() => {
 
 function myFunction(x) {
   if (x.matches) {
-    ScrollSmoother.create({
-      smooth: 0,
-      effects: false,
-      smoothTouch: 0,
-    });
+    console.log("abc");
   } else {
     ScrollSmoother.create({
       smooth: 1.15,
