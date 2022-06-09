@@ -1187,11 +1187,8 @@ header .header-content .header-right a {
   font-weight: 400;
 }
 .project-section .project-section-content .project-heading a {
-  background-color: #323232;
-  color: #fff;
-  font-size: 1.5rem;
-  padding: 1.25rem 2.5rem;
-  font-weight: 500;
+  color: #323232;
+  font-size: 2.75rem;
   text-transform: uppercase;
 }
 .project-section .project-section-content .project-heading a i {
@@ -1199,6 +1196,7 @@ header .header-content .header-right a {
 }
 .project-section .project-section-content .projects-pictures-grid {
   width: 100%;
+  display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-gap: 5rem;
